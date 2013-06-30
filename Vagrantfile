@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
 
-  config.vm.hostname = "tabrific-web-user-berkshelf"
+  config.vm.hostname = "node-web-user-berkshelf"
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "quantal64"
@@ -84,7 +84,7 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "recipe[tabrific-web-user::default]"
+        "recipe[node-web-user::default]"
     ]
   end
 end

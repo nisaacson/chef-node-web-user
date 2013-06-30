@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: tabrific-web-user
+# Cookbook Name:: node-web-user
 # Recipe:: default
 #
 # Copyright (C) 2013 YOUR_NAME
@@ -13,6 +13,6 @@ end
 user node[:web][:user] do
   home node[:web][:home]
   shell node[:web][:shell]
-  comment "User to run web services"
+  comment "User to run node.js web services"
   supports :manage_home => true
 end
